@@ -7,6 +7,13 @@
 .container{
     margin: 40px;
 }
+@media only screen and (max-width:600px) {
+    .container {
+        margin: 0;
+    }
+}
+a {text-decoration: none;}
+
 body{
      background: -webkit-linear-gradient(360deg, #8e7a3f 10%, #b09a51 360%);
  }
@@ -16,15 +23,38 @@ margin-left: 150px;
     height: 100%;
 text-align: center;
 }
+@media only screen and (max-width:600px) {
+    section {
+        margin-left: 75px;
+    }
 nav {
     margin-top: 20px;
 }
+
+.checkbtn{
+    float: right;
+    margin-right:40px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
 nav ul li {
     display: inline;
     font-weight: bold;
     text-transform: uppercase;
     margin: 20px;
 }
+@media only screen and (max-width:600px) {
+nav ul li {
+        display: none;
+
+    }
+}
+
 aside{
     height:92% ;
     width: 150px;
@@ -39,11 +69,30 @@ flex-wrap: wrap;
 align-items: center;
 overflow-y: visible;
 }
+@media only screen and (max-width:600px) {
+aside  {
+        width: 75px;
 
+    }
+}
 aside h1 {display: inline-block;}
+@media only screen and (max-width:600px) {
+aside h1 {
+        display: none;
+
+    }
+}
+
 #sidetop{
     margin-top: 20px;
 }
+@media only screen and (max-width:600px) {
+#sidetop ul li a {
+        display: none;
+
+    }
+}
+
 .lista1{
     margin-top: 20px;
 }
@@ -53,7 +102,18 @@ aside h1 {display: inline-block;}
 .lista2{
     margin-top: 20px;
 }
+@media only screen and (max-width:600px) {
+.lista2 {
+        display: none;
 
+    }
+}
+@media only screen and (max-width:600px) {
+.selezione a {
+        display: none;
+
+    }
+}
 .lista2 li{
     text-transform: uppercase;
     font-size: 10px;
@@ -74,6 +134,11 @@ footer {width: 100%;
     background-color:#606060;
     position: fixed;
 bottom: 0;
+}
+@media only screen and (max-width:600px) {
+footer {
+justify-content: flex-start;
+    }
 }
 .creato {
     display: flex;
@@ -108,12 +173,30 @@ bottom: 0;
     align-items: center;
 
 }
+@media only screen and (max-width:600px) {
+.footer-left {
+        width: 150px;
+    }
+}
+@media only screen and (max-width:600px) {
+.footer-left p {
+        display: none;
+
+    }
+}
+
 .footer-center{
     width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+@media only screen and (max-width:600px) {
+.footer-center {
+        width: 350px;
+justify-content: flex-start;
+    }
 }
 
 .footer-center i {
@@ -157,7 +240,12 @@ bottom: 0;
     display: flex;
     align-items: center;
 }
+@media only screen and (max-width:600px) {
+.footer-right {
+        display: none;
 
+    }
+}
 
 
 .slider-small {
